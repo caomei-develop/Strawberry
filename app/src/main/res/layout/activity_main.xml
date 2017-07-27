@@ -27,12 +27,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
-                app:popupTheme="@style/AppTheme.PopupOverlay" >
-                <ImageView
-                    android:id="@+id/wf_icon"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp" />
-                </android.support.v7.widget.Toolbar>
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            </android.support.v7.widget.Toolbar>
 
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>

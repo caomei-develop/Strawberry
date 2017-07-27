@@ -20,6 +20,9 @@ import com.cm.strawberry.callback.Callback;
 import com.cm.strawberry.service.WeatherForecastService;
 import com.cm.strawberry.util.PermissionManager;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
@@ -28,8 +31,6 @@ public class MainActivity extends AppCompatActivity {
     Toolbar toolbar;
     @Bind(R.id.fab)
     FloatingActionButton fab;
-    @Bind(R.id.wf_icon)
-    ImageView wfIcon;
     /**
      * 高德定位
      */
@@ -42,8 +43,6 @@ public class MainActivity extends AppCompatActivity {
      * 天气service
      */
     private WeatherForecastService weatherForecastService;
-    private WeatherForecast weatherForecast = new WeatherForecast();
-    ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
      * @param province
      * @param city
      */
+    List<WeatherForecast.ResultBean> resultBean = new ArrayList<>();
     private void getWeatherForecast(String province, String city) {
         weatherForecastService = new WeatherForecastService();
         weatherForecastService.getWeatherForecastService(province, Api.APP_KEY, city, new Callback<WeatherForecast>() {
@@ -104,14 +104,7 @@ public class MainActivity extends AppCompatActivity {
             public void onSuccess(WeatherForecast model) {
                 super.onSuccess(model);
                 if (model != null) {
-                    weatherForecast = model;
-                    if (weatherForecast.getResult().get(0).getWeather().equals("多云")) {
-                        wfIcon.setImageResource(R.mipmap.rainy_day);
-                    }else if (weatherForecast.getResult().get(0).getWeather().equals("雨")) {
-                        wfIcon.setImageResource(R.mipmap.rainy_day);
-                    } else if (weatherForecast.getResult().get(0).getWeather().equals("雪")) {
-                        wfIcon.setImageResource(R.mipmap.snowing_day);
-                    }
+                    resultBean = model.getResult();
                 }
             }
 
@@ -120,8 +113,12 @@ public class MainActivity extends AppCompatActivity {
                 super.onFailure(msg);
             }
         });
-
     }
+
+//    @Override
+//    public boolean onPrepareOptionsMenu(Menu menu) {
+//        return super.onPrepareOptionsMenu(menu);
+//    }
 
     /**
      * 获取右侧mune
@@ -132,6 +129,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
+        if (resultBean != null){
+            if (resultBean.get(0).getWeather() != null) {
+                String weather = resultBean.get(0).getWeather();
+                if (weather.equals("多云")) {
+                    menu.findItem(R.id.weather_forecast).setIcon(R.mipmap.sunny_day);
+                } else if (weather.equals("雨")) {
+                    menu.findItem(R.id.weather_forecast).setIcon(R.mipmap.rainy_day);
+                } else if (weather.equals("雪")) {
+                    menu.findItem(R.id.weather_forecast).setIcon(R.mipmap.snowing_day);
+                }
+            }
+        }
         return true;
     }
 
