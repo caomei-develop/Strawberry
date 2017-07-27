@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/zhouwei/.gradle/caches/modules-2/files-2.1/com.amap.api/location/3.4.1/ebe380d6da0d59db86ff68c843b3b8467ab26506/location-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ebe380d6da0d59db86ff68c843b3b8467ab26506">
+        <dex dex="/home/zhouwei/test_zw/strawberry/app/build/intermediates/pre-dexed/debug/location-3.4.1_c30dc4dad8403607306d2d5f9befaac13563432a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/zhouwei/test_zw/strawberry/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="/home/zhouwei/test_zw/strawberry/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9877462fbc981e9c57393cf0b242364447c9853d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/zhouwei/test_zw/strawberry/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d9b4a7f3ec14d3e26e30b6732637afb583235d06">
+        <dex dex="/home/zhouwei/test_zw/strawberry/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_ccb4c308ba248d871974b11493c04a25a5eee27a/classes.dex" />
+    </item>
+
+</items>
