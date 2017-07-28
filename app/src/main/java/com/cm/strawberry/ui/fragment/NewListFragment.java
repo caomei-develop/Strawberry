@@ -3,6 +3,7 @@ package com.cm.strawberry.ui.fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,14 +11,19 @@ import android.view.ViewGroup;
 import com.cm.strawberry.R;
 import com.cm.strawberry.api.Api;
 import com.cm.strawberry.bean.WxAiccle;
+import com.cm.strawberry.bean.WxSearch;
 import com.cm.strawberry.callback.Callback;
 import com.cm.strawberry.service.WxAcaleService;
+
+import butterknife.Bind;
 
 /**
  * Created by zhouwei on 17-7-28.
  */
 
 public class NewListFragment extends Fragment{
+    @Bind(R.id.news_list_rview)
+    RecyclerView recyclerView;
     private String cid;
     private int  page , size;
     public static NewListFragment newInstance(int tags, String cid) {
@@ -38,6 +44,7 @@ public class NewListFragment extends Fragment{
     }
 
     private void init() {
+
         cid = getArguments().getString("cid");
         getWxacale();
     }
@@ -45,9 +52,9 @@ public class NewListFragment extends Fragment{
     private void getWxacale() {
         page = 1;
         size= 10;
-        WxAcaleService.getWXAcaleService(page, cid, Api.APP_KEY, size, new Callback<WxAiccle>() {
+        WxAcaleService.getWXAcaleService(page, cid, Api.APP_KEY, size, new Callback<WxSearch>() {
             @Override
-            public void onSuccess(WxAiccle model) {
+            public void onSuccess(WxSearch model) {
                 super.onSuccess(model);
                 if (model != null){
 

@@ -1,5 +1,6 @@
 package com.cm.strawberry.ui;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.BitmapDrawable;
@@ -8,6 +9,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.cm.strawberry.R;
@@ -15,6 +17,7 @@ import com.cm.strawberry.util.QRCode;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class QrcodeActivity extends AppCompatActivity {
     @Bind(R.id.qrcode_img)
@@ -37,6 +40,15 @@ public class QrcodeActivity extends AppCompatActivity {
         qrcodeImg.setImageBitmap(QRCode.createQRCode("https://github.com/zwStrawberry"));
 //        qrcodeImg.setImageBitmap(QRCode.createQRCodeWithLogo2("https://github.com/zwStrawberry",
 //                500, drawableToBitmap(getResources().getDrawable(R.mipmap.ic_launcher))));
+    }
+
+    @OnClick(R.id.saomiao)
+    public void Onclick(View view){
+        switch (view.getId()){
+            case R.id.saomiao:
+                break;
+
+        }
     }
 
     @Override

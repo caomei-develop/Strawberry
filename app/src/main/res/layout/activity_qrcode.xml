@@ -5,8 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context="com.cm.strawberry.ui.QrcodeActivity">
-
+    <TextView
+        android:id="@+id/saomiao"
+        android:text="扫描"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:gravity="center"/>
     <ImageView
         android:id="@+id/qrcode_img"
         android:layout_width="500px"
