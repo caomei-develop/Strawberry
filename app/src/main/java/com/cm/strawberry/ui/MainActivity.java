@@ -213,6 +213,7 @@ public class MainActivity extends AppCompatActivity {
      * @param province
      * @param city
      */
+    List<WeatherForecast.ResultBean> resultBean = new ArrayList<>();
     private void getWeatherForecast(String province, String city) {
         weatherForecastService = new WeatherForecastService();
         weatherForecastService.getWeatherForecastService(province, Api.APP_KEY, city, new Callback<WeatherForecast>() {
@@ -228,6 +229,7 @@ public class MainActivity extends AppCompatActivity {
                     } else if (weatherForecast.getResult().get(0).getWeather().equals("雪")) {
                         fab.setImageResource(R.mipmap.snowing_day);
                     }
+                    resultBean = model.getResult();
                 }
             }
 
@@ -236,8 +238,8 @@ public class MainActivity extends AppCompatActivity {
                 super.onFailure(msg);
             }
         });
-
     }
+
 
     /**
      * 获取右侧mune
