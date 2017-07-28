@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="right"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="2.5dp">
+    <TextView
+        android:id="@+id/generate_qrcode_btn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="生成二维码"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/scanning_qrcode_btn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="扫描二维码"/>
+</LinearLayout>

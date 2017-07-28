@@ -2,8 +2,10 @@ package com.cm.strawberry.api;
 
 
 
-import com.cm.strawberry.base.PerpetualCalendar;
-import com.cm.strawberry.base.WeatherForecast;
+import com.cm.strawberry.bean.NewListTab;
+import com.cm.strawberry.bean.PerpetualCalendar;
+import com.cm.strawberry.bean.WeatherForecast;
+import com.cm.strawberry.bean.WxAiccle;
 
 import retrofit2.http.GET;
 import retrofit2.http.Query;
@@ -19,4 +21,10 @@ public interface Api {
     Observable<WeatherForecast>wForecast(@Query("province") String province, @Query("key") String key, @Query("city") String city);
     @GET("appstore/calendar/day?")//获取万年历
     Observable<PerpetualCalendar>pCalendar(@Query("key") String key, @Query("date") String date);
+//    http://apicloud.mob.com/v1/cook/category/query?key=520520test
+    @GET("v1/cook/category/query?")
+    Observable<NewListTab> newListTab(@Query("key") String key);
+//    http://apicloud.mob.com/wx/article/category/query?
+    @GET("wx/article/search?")
+    Observable<WxAiccle> wxarticle(@Query("page") int page,@Query("cid") String cid,@Query("key") String key,@Query("size") int size);
 }

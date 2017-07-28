@@ -6,5 +6,6 @@
         android:id="@+id/weather_forecast"
         android:orderInCategory="100"
         app:showAsAction="ifRoom"
+        android:icon="@mipmap/qrcode"
         android:title="" />
 </menu>

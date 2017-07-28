@@ -1,7 +1,7 @@
 package com.cm.strawberry.service;
 
 import com.cm.strawberry.api.Api;
-import com.cm.strawberry.base.PerpetualCalendar;
+import com.cm.strawberry.bean.PerpetualCalendar;
 import com.cm.strawberry.callback.Callback;
 import com.cm.strawberry.http.HttpRequest;
 import com.cm.strawberry.http.helper.RetrofitHelper;
@@ -35,7 +35,6 @@ public class PerpetualcalendarService {
                 }
             }
         });
-
 
     }
 }
