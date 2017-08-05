@@ -92,6 +92,16 @@ public class WxSearch {
             private String pubTime;
             private String sourceUrl;
             private String subTitle;
+            private String thumbnails;
+
+            public String getThumbnails() {
+                return thumbnails;
+            }
+
+            public void setThumbnails(String thumbnails) {
+                this.thumbnails = thumbnails;
+            }
+
             private String title;
 
             public String getCid() {

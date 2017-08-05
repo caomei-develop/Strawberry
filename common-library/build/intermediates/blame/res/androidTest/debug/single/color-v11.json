@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/androidTest/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/home/zhouwei/.android/build-cache/7baad8722bb498be8d48528055b3826956e0401c/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/androidTest/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/home/zhouwei/.android/build-cache/7baad8722bb498be8d48528055b3826956e0401c/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    }
+]

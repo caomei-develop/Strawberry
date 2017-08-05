@@ -45,7 +45,7 @@ public class PermissionManager {
     //其他权限类似可自行添加
 
     /**
-     * 根据需求输入对应的需要检测申请的权限
+     * 根据需求输入对应的需要检测申请的权限asset
      * @param permission
      */
     public static void setPermission(int... permission) {
