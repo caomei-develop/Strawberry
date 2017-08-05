@@ -18,4 +18,16 @@
     <dimen name="common_block_margin_vertical">10dp</dimen>
 
     <dimen name="common_notic_text_margin_top">15dp</dimen>
+    <dimen name="toolbar_height">40dp</dimen>
+    <!-- custom_switch -->
+    <dimen name="custom_switch_height">25dp</dimen>
+    <dimen name="custom_switch_width">50dp</dimen>
+    <dimen name="custom_switch_margin_right">15dp</dimen>
+    <!-- common_notic_marker -->
+    <dimen name="common_notic_img_margin_top">75dp</dimen>
+    <dimen name="common_notic_text_size">15sp</dimen>
+
+    <!-- dialog_progress -->
+    <dimen name="dialog_progress_layout_padding">20dp</dimen>
+    <dimen name="dialog_progress_text_margin">10dp</dimen>
 </resources>

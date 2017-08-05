@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="umeng-analytics-v6.0.9">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/common-library/libs/umeng-analytics-v6.0.9.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
