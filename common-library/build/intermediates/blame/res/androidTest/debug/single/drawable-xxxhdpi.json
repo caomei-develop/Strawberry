@@ -8,12 +8,12 @@
         "source": "/home/zhouwei/.android/build-cache/7baad8722bb498be8d48528055b3826956e0401c/output/res/drawable-xxxhdpi/abc_ic_ab_back_mtrl_am_alpha.png"
     },
     {
-        "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi/abc_ic_menu_copy_mtrl_am_alpha.png",
-        "source": "/home/zhouwei/.android/build-cache/7baad8722bb498be8d48528055b3826956e0401c/output/res/drawable-xxxhdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi/abc_btn_radio_to_on_mtrl_015.png",
         "source": "/home/zhouwei/.android/build-cache/7baad8722bb498be8d48528055b3826956e0401c/output/res/drawable-xxxhdpi/abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/home/zhouwei/.android/build-cache/7baad8722bb498be8d48528055b3826956e0401c/output/res/drawable-xxxhdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi/abc_btn_check_to_on_mtrl_000.png",

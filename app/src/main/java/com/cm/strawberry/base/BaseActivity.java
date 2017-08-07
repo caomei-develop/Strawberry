@@ -20,7 +20,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.cm.strawberry.R;
 import com.cm.strawberry.app.StrawberryApplication;
-import com.cm.strawberry.callback.WaitableActivity;
 import com.cm.strawberry.util.ActivityManager;
 import com.cm.strawberry.util.ErrorViewUtil;
 import com.cm.strawberry.util.StatusBarUtil;
@@ -28,7 +27,6 @@ import com.cm.strawberry.util.Utils;
 import com.cm.strawberry.view.CommonNoticeView;
 import com.cm.strawberry.view.InputMethodManagerUtil;
 import com.cm.strawberry.view.NewNavigationBar;
-import com.umeng.analytics.MobclickAgent;
 
 /**
  * Created by zhouwei on 17-7-31.
@@ -245,14 +243,12 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        MobclickAgent.onResume(this);
     }
 
     @Override
     protected void onPause() {
         try {
             super.onPause();
-            MobclickAgent.onPause(this);
         } catch (Exception e) {
         }
     }

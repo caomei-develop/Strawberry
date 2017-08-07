@@ -1,6 +1,5 @@
 package com.cm.strawberry.ui;
 
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.BitmapDrawable;
