@@ -2,8 +2,6 @@ package com.cm.strawberry.adapter;
 
 import android.content.Context;
 import android.support.annotation.LayoutRes;
-import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -14,9 +12,6 @@ import com.cm.strawberry.R;
 import com.cm.strawberry.bean.WxSearch;
 import com.jude.easyrecyclerview.adapter.BaseViewHolder;
 import com.jude.easyrecyclerview.adapter.RecyclerArrayAdapter;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -30,7 +25,6 @@ public class NewsListDilstAdapter extends RecyclerArrayAdapter<WxSearch.ResultBe
     public NewsListDilstAdapter(Context context) {
         super(context);
     }
-
 
     @Override
     public BaseViewHolder OnCreateViewHolder(ViewGroup parent, int viewType) {
@@ -55,11 +49,9 @@ public class NewsListDilstAdapter extends RecyclerArrayAdapter<WxSearch.ResultBe
             super.setData(data);
             if (data != null) {
                 if (data.getThumbnails() == null) {
-                    Glide.with(getContext()).load(R.mipmap.pkq).into(wx_img);
-                }else {
+                } else {
                     Glide.with(getContext()).load(data.getThumbnails()).into(wx_img);
                 }
-
                 wx_title.setText(data.getTitle());
                 wx_time.setText(data.getPubTime());
 

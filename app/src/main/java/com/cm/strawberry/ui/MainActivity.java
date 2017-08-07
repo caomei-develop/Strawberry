@@ -138,25 +138,7 @@ public class MainActivity extends AppCompatActivity {
      * 获取tab
      */
     private void getNewListTab() {
-//        newListTab = new ArrayList<>();
         wxAiccles = new ArrayList<>();
-//        newListTab.add(new NewListTab("0010001030","鲁菜","0010001004"));
-//        newListTab.add(new NewListTab("0010001031","川菜","0010001004"));
-//        newListTab.add(new NewListTab("0010001032","粤菜","0010001004"));
-//        newListTab.add(new NewListTab("0010001033","闽菜","0010001004"));
-//        newListTab.add(new NewListTab("0010001034","浙菜","0010001004"));
-//        newListTab.add(new NewListTab("0010001035","湘菜","0010001004"));
-//        newListTab.add(new NewListTab("0010001036","上海菜","0010001004"));
-//        newListTab.add(new NewListTab("0010001037","徽菜","0010001004"));
-//        newListTab.add(new NewListTab("0010001038","京菜","0010001004"));
-//        newListTab.add(new NewListTab("0010001039","东北菜","0010001004"));
-//        newListTab.add(new NewListTab("0010001040","西北菜","0010001004"));
-//        newListTab.add(new NewListTab("0010001041","客家菜","0010001004"));
-//        newListTab.add(new NewListTab("0010001042","台湾美食","0010001004"));
-//        newListTab.add(new NewListTab("0010001043","泰国菜","0010001004"));
-//        newListTab.add(new NewListTab("0010001044","日本料理","0010001004"));
-//        newListTab.add(new NewListTab("0010001045","韩国料理","0010001004"));
-//        newListTab.add(new NewListTab("0010001046","西餐","0010001004"));
         wxAiccles.add(new WxAiccle("1","时尚"));
         wxAiccles.add(new WxAiccle("2","热点"));
         wxAiccles.add(new WxAiccle("37","段子"));

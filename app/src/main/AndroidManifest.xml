@@ -25,17 +25,18 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-    <!-- 扫描二维码-->
+    <!-- 扫描二维码 -->
     <uses-permission android:name="android.permission.VIBRATE" /> <!-- 震动权限 -->
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera" /> <!-- 使用照相机权限 -->
     <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- 自动聚焦权限 -->
 
     <uses-permission android:name="android.permission.RECEIVE_SMS" /> <!-- 接收短信权限 -->
     <uses-permission android:name="android.permission.READ_SMS" /> <!-- 读取短信权限 -->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission><!-- 通话中权限-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 通话中权限 -->
 
-    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.GET_TASKS" />
 
     <application
         android:name=".app.StrawberryApplication"
@@ -58,18 +59,20 @@
         <!-- 高德定位SDK -->
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="47d7a73335be53a2cf73354a701b2514"></meta-data>
+            android:value="47d7a73335be53a2cf73354a701b2514" />
 
         <service android:name="com.amap.api.location.APSService" />
         <!-- end -->
-        <activity android:name=".ui.QrcodeActivity"></activity>
+        <activity android:name=".ui.QrcodeActivity" />
 
-        <!-- -->
+        <!--  -->
         <receiver android:name=".receiver.SmsReceiver">
             <intent-filter android:priority="10000">
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
+
+        <activity android:name=".ui.activity.NewsdetailsActivity"></activity>
     </application>
 
 </manifest>
