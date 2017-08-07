@@ -29,6 +29,6 @@ public interface Api {
     @GET("v1/cook/category/query?")
     Observable<NewListTab> newListTab(@Query("key") String key);
     @GET("wx/article/search?")
-//    Observable<WxAiccle> wxarticle(@Query("page") int page,@Query("cid") String cid,@Query("key") String key,@Query("size") int size);
-    Observable<WxSearch> wxarticle(@QueryMap HashMap<String , Object> map);
+    Observable<WxSearch> wxarticle(@Query("page") int page,@Query("cid") String cid,@Query("key") String key,@Query("size") int size);
+//    Observable<WxSearch> wxarticle(@QueryMap HashMap<String , Object> map);
 }

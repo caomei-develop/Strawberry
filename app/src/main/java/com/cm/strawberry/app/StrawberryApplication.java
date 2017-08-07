@@ -16,5 +16,6 @@ public class StrawberryApplication extends Application{
     @Override
     public void onCreate() {
         super.onCreate();
+        strawberryApp = this;
     }
 }

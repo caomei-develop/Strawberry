@@ -1,6 +1,7 @@
 package com.cm.strawberry.adapter;
 
 import android.content.Context;
+import android.support.annotation.LayoutRes;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,56 +12,58 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.cm.strawberry.R;
 import com.cm.strawberry.bean.WxSearch;
+import com.jude.easyrecyclerview.adapter.BaseViewHolder;
+import com.jude.easyrecyclerview.adapter.RecyclerArrayAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
 
 /**
  * Created by zhouwei on 17-7-28.
  */
 
-public class NewsListDilstAdapter extends RecyclerView.Adapter<NewsListDilstAdapter.ViewHolder>{
-    private Context context;
-    private LayoutInflater layoutInflater;
-    private List<WxSearch.ResultBean.ListBean>result;
-    public NewsListDilstAdapter(Context context){
-        this.context= context;
-        this.layoutInflater = LayoutInflater.from(context);
+public class NewsListDilstAdapter extends RecyclerArrayAdapter<WxSearch.ResultBean.ListBean> {
+
+    public NewsListDilstAdapter(Context context) {
+        super(context);
     }
+
 
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new ViewHolder(layoutInflater.inflate(R.layout.wx_dialist_layout, parent, false));
+    public BaseViewHolder OnCreateViewHolder(ViewGroup parent, int viewType) {
+        return new ViewHolder(parent, R.layout.wx_dialist_layout);
     }
 
-    @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
-        Glide.with(context).load(result.get(position).getThumbnails()).into(holder.wx_img);
-        holder.wx_title.setText(result.get(position).getSubTitle());
-        holder.wx_time.setText(result.get(position).getPubTime());
-    }
+    public class ViewHolder extends BaseViewHolder<WxSearch.ResultBean.ListBean> {
+        @Bind(R.id.wx_img)
+        ImageView wx_img;
+        @Bind(R.id.wx_title)
+        TextView wx_title;
+        @Bind(R.id.wx_time)
+        TextView wx_time;
 
-    @Override
-    public int getItemCount() {
-        return result.size();
-    }
-
-    public void setData(List<WxSearch.ResultBean.ListBean>list){
-        result = new ArrayList<>();
-        if (list != null){
-            this.result = list;
+        public ViewHolder(ViewGroup parent, @LayoutRes int res) {
+            super(parent, res);
+            ButterKnife.bind(this, itemView);
         }
-        notifyDataSetChanged();
-    }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
-        private ImageView wx_img;
-        private TextView wx_title,wx_time;
-        public ViewHolder(View v) {
-            super(v);
-            wx_img = v.findViewById(R.id.wx_img);
-            wx_title = v.findViewById(R.id.wx_title);
-            wx_time = v.findViewById(R.id.wx_time);
+        @Override
+        public void setData(WxSearch.ResultBean.ListBean data) {
+            super.setData(data);
+            if (data != null) {
+                if (data.getThumbnails() == null) {
+                    Glide.with(getContext()).load(R.mipmap.pkq).into(wx_img);
+                }else {
+                    Glide.with(getContext()).load(data.getThumbnails()).into(wx_img);
+                }
+
+                wx_title.setText(data.getTitle());
+                wx_time.setText(data.getPubTime());
+
+            }
         }
     }
 }

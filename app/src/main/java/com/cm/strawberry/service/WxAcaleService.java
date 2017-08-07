@@ -18,13 +18,8 @@ import rx.Observable;
 
 public class WxAcaleService {
     public void getWXAcaleService(int page, String cid, String key, int size, final Callback<WxSearch>callback){
-        HashMap<String , Object> map = new HashMap<>();
-        map.put("page",page);
-        map.put("cid",cid);
-        map.put("key",key);
-        map.put("size",size);
         Observable<WxSearch> wxSearchObservable = RetrofitHelper.getService(Api.BASE_MOB_URL, Api.class)
-                .wxarticle(map);
+                .wxarticle(page,cid,key,size);
         HttpRequest.requestNetByGet(wxSearchObservable, new HttpRequest.OnResultListener<WxSearch>() {
             @Override
             public void onSuccess(WxSearch wxSearch) {

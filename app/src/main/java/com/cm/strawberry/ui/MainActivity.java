@@ -45,16 +45,11 @@ public class MainActivity extends AppCompatActivity {
     @Bind(R.id.viewPager)
     ViewPager viewPager;
     /**
-     *
-     */
-    /**
      * 获取tab标签
      */
     private List<Fragment> fragments = new ArrayList<>();
-    private NewListTabService newListTabService = new NewListTabService();
     private NewListAdapter newListAdapter;
     private FragmentManager fragmentManager;
-    private List<NewListTab>newListTab;
     private List<WxAiccle>wxAiccles;
     /**
      * 高德定位

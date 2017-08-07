@@ -276,7 +276,7 @@ public class BaseActivity extends AppCompatActivity {
         waitDialog = new Dialog(this, R.style.dialogProgress);
         waitDialog.setContentView(R.layout.dialog_progress);
         WindowManager.LayoutParams lp = waitDialog.getWindow().getAttributes();
-        lp.width = Utils.getDeviceWidth(this) - Utils.dip2px(this, 50);
+        lp.width = Utils.dip2px(this, 50);
         waitDialog.getWindow().setAttributes(lp);
         ((TextView) waitDialog.findViewById(R.id.tv_wait_message)).setText(message);
         return true;
