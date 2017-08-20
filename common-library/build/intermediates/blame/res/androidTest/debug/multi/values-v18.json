@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v18/values-v18.xml",
+        "outputFile": "E:\\home\\zhouwei\\test_zw\\Strawberry\\common-library\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v18\\values-v18.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,31 @@
                     "endOffset": 99
                 },
                 "from": {
-                    "file": "/home/zhouwei/.android/build-cache/7baad8722bb498be8d48528055b3826956e0401c/output/res/values-v18/values-v18.xml",
+                    "file": "E:\\home\\zhouwei\\.android\\build-cache\\7baad8722bb498be8d48528055b3826956e0401c\\output\\res\\values-v18\\values-v18.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 291,
+                        "endColumn": 48,
+                        "endOffset": 335
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "E:\\Github\\Strawberry\\common-library\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v18\\values-v18.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "C:\\Users\\zw\\.android\\build-cache\\89ecde0f4eb4fd12b1fdcca910f027fa922e40d2\\output\\res\\values-v18\\values-v18.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

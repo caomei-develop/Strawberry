@@ -18,6 +18,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import com.cm.strawberry.R;
 import com.cm.strawberry.app.StrawberryApplication;
 import com.cm.strawberry.util.ActivityManager;

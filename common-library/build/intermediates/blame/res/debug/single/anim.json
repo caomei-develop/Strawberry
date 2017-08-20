@@ -1,58 +1,114 @@
 [
     {
-        "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
-        "source": "/home/zhouwei/.android/build-cache/7baad8722bb498be8d48528055b3826956e0401c/output/res/anim/abc_slide_out_top.xml"
+        "merged": "E:\\home\\zhouwei\\test_zw\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\snackbar_out.xml",
+        "source": "E:\\home\\zhouwei\\.android\\build-cache\\d36ef063d81e3970ec415656a6f23b924031d61e\\output\\res\\anim\\snackbar_out.xml"
     },
     {
-        "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/debug/anim/fab_in.xml",
-        "source": "/home/zhouwei/.android/build-cache/d36ef063d81e3970ec415656a6f23b924031d61e/output/res/anim/fab_in.xml"
+        "merged": "E:\\Github\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\zw\\.android\\build-cache\\89ecde0f4eb4fd12b1fdcca910f027fa922e40d2\\output\\res\\anim\\abc_popup_enter.xml"
     },
     {
-        "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
-        "source": "/home/zhouwei/.android/build-cache/7baad8722bb498be8d48528055b3826956e0401c/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+        "merged": "E:\\home\\zhouwei\\test_zw\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "E:\\home\\zhouwei\\.android\\build-cache\\7baad8722bb498be8d48528055b3826956e0401c\\output\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
-        "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
-        "source": "/home/zhouwei/.android/build-cache/7baad8722bb498be8d48528055b3826956e0401c/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+        "merged": "E:\\Github\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\snackbar_in.xml",
+        "source": "C:\\Users\\zw\\.android\\build-cache\\97ef2ba2f571f18a160caaa4a80c64c1cd5f7351\\output\\res\\anim\\snackbar_in.xml"
     },
     {
-        "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
-        "source": "/home/zhouwei/.android/build-cache/7baad8722bb498be8d48528055b3826956e0401c/output/res/anim/abc_popup_exit.xml"
+        "merged": "E:\\Github\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\fab_out.xml",
+        "source": "C:\\Users\\zw\\.android\\build-cache\\97ef2ba2f571f18a160caaa4a80c64c1cd5f7351\\output\\res\\anim\\fab_out.xml"
     },
     {
-        "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/debug/anim/snackbar_out.xml",
-        "source": "/home/zhouwei/.android/build-cache/d36ef063d81e3970ec415656a6f23b924031d61e/output/res/anim/snackbar_out.xml"
+        "merged": "E:\\home\\zhouwei\\test_zw\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "E:\\home\\zhouwei\\.android\\build-cache\\7baad8722bb498be8d48528055b3826956e0401c\\output\\res\\anim\\abc_slide_in_top.xml"
     },
     {
-        "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
-        "source": "/home/zhouwei/.android/build-cache/7baad8722bb498be8d48528055b3826956e0401c/output/res/anim/abc_slide_out_bottom.xml"
+        "merged": "E:\\home\\zhouwei\\test_zw\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\fab_out.xml",
+        "source": "E:\\home\\zhouwei\\.android\\build-cache\\d36ef063d81e3970ec415656a6f23b924031d61e\\output\\res\\anim\\fab_out.xml"
     },
     {
-        "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/debug/anim/fab_out.xml",
-        "source": "/home/zhouwei/.android/build-cache/d36ef063d81e3970ec415656a6f23b924031d61e/output/res/anim/fab_out.xml"
+        "merged": "E:\\Github\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\snackbar_out.xml",
+        "source": "C:\\Users\\zw\\.android\\build-cache\\97ef2ba2f571f18a160caaa4a80c64c1cd5f7351\\output\\res\\anim\\snackbar_out.xml"
     },
     {
-        "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
-        "source": "/home/zhouwei/.android/build-cache/7baad8722bb498be8d48528055b3826956e0401c/output/res/anim/abc_slide_in_top.xml"
+        "merged": "E:\\Github\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\zw\\.android\\build-cache\\89ecde0f4eb4fd12b1fdcca910f027fa922e40d2\\output\\res\\anim\\abc_fade_in.xml"
     },
     {
-        "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
-        "source": "/home/zhouwei/.android/build-cache/7baad8722bb498be8d48528055b3826956e0401c/output/res/anim/abc_popup_enter.xml"
+        "merged": "E:\\Github\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\zw\\.android\\build-cache\\89ecde0f4eb4fd12b1fdcca910f027fa922e40d2\\output\\res\\anim\\abc_fade_out.xml"
     },
     {
-        "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
-        "source": "/home/zhouwei/.android/build-cache/7baad8722bb498be8d48528055b3826956e0401c/output/res/anim/abc_fade_out.xml"
+        "merged": "E:\\Github\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\zw\\.android\\build-cache\\89ecde0f4eb4fd12b1fdcca910f027fa922e40d2\\output\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
-        "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
-        "source": "/home/zhouwei/.android/build-cache/7baad8722bb498be8d48528055b3826956e0401c/output/res/anim/abc_slide_in_bottom.xml"
+        "merged": "E:\\home\\zhouwei\\test_zw\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "E:\\home\\zhouwei\\.android\\build-cache\\7baad8722bb498be8d48528055b3826956e0401c\\output\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
-        "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/debug/anim/snackbar_in.xml",
-        "source": "/home/zhouwei/.android/build-cache/d36ef063d81e3970ec415656a6f23b924031d61e/output/res/anim/snackbar_in.xml"
+        "merged": "E:\\Github\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\zw\\.android\\build-cache\\89ecde0f4eb4fd12b1fdcca910f027fa922e40d2\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
-        "source": "/home/zhouwei/.android/build-cache/7baad8722bb498be8d48528055b3826956e0401c/output/res/anim/abc_fade_in.xml"
+        "merged": "E:\\home\\zhouwei\\test_zw\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\snackbar_in.xml",
+        "source": "E:\\home\\zhouwei\\.android\\build-cache\\d36ef063d81e3970ec415656a6f23b924031d61e\\output\\res\\anim\\snackbar_in.xml"
+    },
+    {
+        "merged": "E:\\Github\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\zw\\.android\\build-cache\\89ecde0f4eb4fd12b1fdcca910f027fa922e40d2\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "E:\\Github\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\fab_in.xml",
+        "source": "C:\\Users\\zw\\.android\\build-cache\\97ef2ba2f571f18a160caaa4a80c64c1cd5f7351\\output\\res\\anim\\fab_in.xml"
+    },
+    {
+        "merged": "E:\\home\\zhouwei\\test_zw\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "E:\\home\\zhouwei\\.android\\build-cache\\7baad8722bb498be8d48528055b3826956e0401c\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\home\\zhouwei\\test_zw\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "E:\\home\\zhouwei\\.android\\build-cache\\7baad8722bb498be8d48528055b3826956e0401c\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "E:\\Github\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\zw\\.android\\build-cache\\89ecde0f4eb4fd12b1fdcca910f027fa922e40d2\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "E:\\home\\zhouwei\\test_zw\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "E:\\home\\zhouwei\\.android\\build-cache\\7baad8722bb498be8d48528055b3826956e0401c\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "E:\\home\\zhouwei\\test_zw\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "E:\\home\\zhouwei\\.android\\build-cache\\7baad8722bb498be8d48528055b3826956e0401c\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\home\\zhouwei\\test_zw\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\fab_in.xml",
+        "source": "E:\\home\\zhouwei\\.android\\build-cache\\d36ef063d81e3970ec415656a6f23b924031d61e\\output\\res\\anim\\fab_in.xml"
+    },
+    {
+        "merged": "E:\\Github\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\zw\\.android\\build-cache\\89ecde0f4eb4fd12b1fdcca910f027fa922e40d2\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "E:\\home\\zhouwei\\test_zw\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "E:\\home\\zhouwei\\.android\\build-cache\\7baad8722bb498be8d48528055b3826956e0401c\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "E:\\Github\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\zw\\.android\\build-cache\\89ecde0f4eb4fd12b1fdcca910f027fa922e40d2\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\home\\zhouwei\\test_zw\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "E:\\home\\zhouwei\\.android\\build-cache\\7baad8722bb498be8d48528055b3826956e0401c\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "E:\\Github\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\zw\\.android\\build-cache\\89ecde0f4eb4fd12b1fdcca910f027fa922e40d2\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "E:\\home\\zhouwei\\test_zw\\Strawberry\\common-library\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "E:\\home\\zhouwei\\.android\\build-cache\\7baad8722bb498be8d48528055b3826956e0401c\\output\\res\\anim\\abc_fade_in.xml"
     }
 ]
