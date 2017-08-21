@@ -24,6 +24,9 @@ public class NewsdetailsActivity extends BaseActivity {
 
     private void init() {
         url = getIntent().getStringExtra("url");
+        if (url == null){
+            return;
+        }
         webView.loadUrl(url);
         webView.setWebViewClient(new WebViewClient(){
             @Override

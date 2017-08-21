@@ -2,6 +2,7 @@ package com.cm.strawberry.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -90,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
      * 启动定位
      */
     private void initLocation() {
+
         locationClient = new AMapLocationClient(this);
         locationOption = new AMapLocationClientOption();
         locationOption.setNeedAddress(true);
@@ -246,7 +248,5 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-
-
+    Handler handler = new Handler();
 }

@@ -2,6 +2,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.cm.strawberry.ui.MainActivity">
+    <!--<item-->
+        <!--android:id="@+id/weather"-->
+        <!--android:orderInCategory="100"-->
+        <!--app:showAsAction="ifRoom"-->
+        <!--android:title=""-->
+        <!--/>-->
     <item
         android:id="@+id/weather_forecast"
         android:orderInCategory="100"
