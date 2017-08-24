@@ -17,7 +17,7 @@ import rx.Observable;
 public interface Api {
     String BASE_MOB_URL = "http://apicloud.mob.com";
     String APP_KEY = "175d559eca020";
-    String MEI_ZI_URL = "http://www.zbjuran.com/mei/";
+    String MEI_ZI_URL = "http://www.keaitupian.com/girl/";
     @GET("v1/weather/query?")
     Observable<WeatherForecast>wForecast(@Query("province") String province, @Query("key") String key, @Query("city") String city);
     @GET("appstore/calendar/day?")

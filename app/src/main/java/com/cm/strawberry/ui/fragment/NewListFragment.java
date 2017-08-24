@@ -1,5 +1,6 @@
 package com.cm.strawberry.ui.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -127,7 +128,10 @@ public class NewListFragment extends AbsListFragment {
         super.onItemViewClick(view, position);
         WxSearch.ResultBean.ListBean listBean = (WxSearch.ResultBean.ListBean) adapter.getItem(position);
         if (listBean != null){
-            ActivityUtil.toActivity(getActivity(),NewsdetailsActivity.class,"url",listBean.getSourceUrl());
+            Intent intent = new Intent(getActivity(),NewsdetailsActivity.class);
+            intent.putExtra("url",listBean.getSourceUrl());
+            startActivity(intent);
+//            ActivityUtil.toActivity(getActivity(),NewsdetailsActivity.class,"url",listBean.getSourceUrl());
         }
     }
 }

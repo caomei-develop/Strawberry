@@ -2,67 +2,40 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="E:\Github\Strawberry\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/zhouwei/test_zw/Strawberry/easyrecyclerview/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="ff39011c13027582667e895978dc6e4773dbb718">
-        <dex dex="E:\Github\Strawberry\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_4ae180e70cbf83e1f4fc6275215473817ab5a495\classes.dex" />
+        sha1="84dad1bd1ef0bfa013cf90517a3f5fd90342c250">
+        <dex dex="/home/zhouwei/test_zw/Strawberry/app/build/intermediates/pre-dexed/debug/classes_e298634a61a8df587deed40d5af17c3bde66c0ca.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="E:\Github\Strawberry\common-library\build\intermediates\bundles\default\libs\zxing-android-core-3.2.1.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="994363c193bef4ca77deba7b3d04dfc2bc3b9fdd">
+        <dex dex="/home/zhouwei/test_zw/Strawberry/app/build/intermediates/pre-dexed/debug/classes_ecdde246b505145484e8b390de0e3075b9580b63.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/bundles/default/libs/zxing-android-core-3.2.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
         sha1="bb833b2fc6c9177f06d96529a854ceb2319832a6">
-        <dex dex="E:\Github\Strawberry\app\build\intermediates\transforms\dex\debug\folders\1000\8\zxing-android-core-3.2.1_edd4574a1f966a0b2ac6c2f5f2f58d72bd12c33d\classes.dex" />
+        <dex dex="/home/zhouwei/test_zw/Strawberry/app/build/intermediates/pre-dexed/debug/zxing-android-core-3.2.1_c9841487a4e4fa133809b31e0c99a5fc755b5a2d.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="E:\Github\Strawberry\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="12920f9016b8b05acbc2af7cdc13cef6946fe7d3">
-        <dex dex="E:\Github\Strawberry\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_7c855e0515666701b31a3e23d45405071710cb21\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\zw\.gradle\caches\modules-2\files-2.1\com.amap.api\location\3.5.0\a02816310bcf897ef35496950110a65b495574a7\location-3.5.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="a02816310bcf897ef35496950110a65b495574a7">
-        <dex dex="E:\Github\Strawberry\app\build\intermediates\transforms\dex\debug\folders\1000\10\location-3.5.0_a160d890985609ce1ea6b66fa2825963ec6f1054\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\zw\.gradle\caches\modules-2\files-2.1\org.jsoup\jsoup\1.10.3\b842f960942503cf1abbcc8c173a7f2c19d43726\jsoup-1.10.3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="b842f960942503cf1abbcc8c173a7f2c19d43726">
-        <dex dex="E:\Github\Strawberry\app\build\intermediates\transforms\dex\debug\folders\1000\10\jsoup-1.10.3_b265b2480e04ded65cdf68d994eb66ac14f02c25\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\Github\Strawberry\common-library\build\intermediates\bundles\default\libs\zxing-core-3.2.1.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/zhouwei/test_zw/Strawberry/common-library/build/intermediates/bundles/default/libs/zxing-core-3.2.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
         sha1="e8b99ae91550764a3812ce48d35c969086882327">
-        <dex dex="E:\Github\Strawberry\app\build\intermediates\transforms\dex\debug\folders\1000\8\zxing-core-3.2.1_051883af252f6c6ed68b5de53e4b9b3ae7768a8b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\zw\.android\build-cache\e4eaac6f26b52b8f2aaac6c2500bfe4f72f9cc78\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
-        <dex dex="E:\Github\Strawberry\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e63ec570331434759c50572c3976dc99e4230064\classes.dex" />
+        <dex dex="/home/zhouwei/test_zw/Strawberry/app/build/intermediates/pre-dexed/debug/zxing-core-3.2.1_47e3f1747d436219b2b38e083fea5069c43bc802.jar" />
     </item>
 
 </items>

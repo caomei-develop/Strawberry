@@ -782,5 +782,12 @@ public class Utils {
 
         return macAddress;
     }
+    public static void startActivityForBrowser(Context context, String url) {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(URIUtils.appendHttpPrefix(url)));
+        try {
+            context.startActivity(intent);
+        } catch (Exception e) {
+        }
+    }
 }
 
