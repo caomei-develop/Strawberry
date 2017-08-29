@@ -1,6 +1,5 @@
 package com.cm.strawberry.adapter;
 
-import android.graphics.Paint;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +15,7 @@ public class CmAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public ArrayList<View> footViews=new ArrayList<>();
     public RecyclerView.Adapter adapter;
 
-    public CmAdapter(RecyclerView.Adapter adapter, ArrayList<View> headerViews, ArrayList footViews){
+    public CmAdapter(RecyclerView.Adapter adapter, ArrayList<View> headerViews, ArrayList<View> footViews){
         this.adapter=adapter;
         this.headerViews=headerViews;
         this.footViews=footViews;

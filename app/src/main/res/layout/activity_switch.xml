@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cm.strawberry.ui.activity.SwitchActivity">
+    <TextView
+        android:id="@+id/index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textColor="@android:color/black" />
+    <com.cm.strawberry.view.RecyclerCoverFlow
+        android:id="@+id/RecyclerCoverFlow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.cm.strawberry.view.RecyclerCoverFlow>
+
+</LinearLayout>

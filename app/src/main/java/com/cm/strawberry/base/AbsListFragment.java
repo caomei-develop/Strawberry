@@ -219,7 +219,6 @@ public abstract class AbsListFragment extends BaseFragment implements SwipeRefre
             }
         }
     }
-
     @Override
     public void onRefresh() {
         page = 0;

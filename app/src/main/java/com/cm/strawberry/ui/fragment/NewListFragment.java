@@ -1,5 +1,6 @@
 package com.cm.strawberry.ui.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -12,6 +13,8 @@ import com.cm.strawberry.base.AbsListFragment;
 import com.cm.strawberry.bean.WxSearch;
 import com.cm.strawberry.callback.Callback;
 import com.cm.strawberry.service.WxAcaleService;
+import com.cm.strawberry.ui.activity.NewsdetailsActivity;
+import com.cm.strawberry.util.ActivityUtil;
 import com.jude.easyrecyclerview.adapter.RecyclerArrayAdapter;
 
 import java.util.List;
@@ -22,7 +25,7 @@ import java.util.List;
 
 public class NewListFragment extends AbsListFragment {
     private WxAcaleService wxAcaleService;
-    private int page = 0 , size = 10;
+    private int page = 1 ;
     private String cid;
     public static NewListFragment newInstance(int tags, String cid) {
         Bundle args = new Bundle();
@@ -40,6 +43,14 @@ public class NewListFragment extends AbsListFragment {
         cid = getArguments().getString("cid");
     }
 
+    @Override
+    public void setVisibleHint(boolean isVisibleToUser) {
+        super.setVisibleHint(isVisibleToUser);
+        if (isVisibleToUser){
+            page = 1;
+            loadData();
+        }
+    }
 
     @Override
     protected RecyclerView.LayoutManager getLayoutManager() {
@@ -58,6 +69,8 @@ public class NewListFragment extends AbsListFragment {
 
     @Override
     public void onLoadMore() {
+        page++;
+        loadData();
         super.onLoadMore();
     }
 
@@ -70,14 +83,8 @@ public class NewListFragment extends AbsListFragment {
         if (isAlreadyToLastPage() || isRequesting()) {
             return;
         }
-        setIsRequesting(true);
-        page++;
-        loadMore();
-    }
-
-    private void loadMore() {
         wxAcaleService = new WxAcaleService();
-        wxAcaleService.getWXAcaleService(page, cid, Api.APP_KEY, size, new Callback<WxSearch>() {
+        wxAcaleService.getWXAcaleService(page, cid, Api.APP_KEY, 10, new Callback<WxSearch>() {
             @Override
             public void onSuccess(WxSearch model) {
                 super.onSuccess(model);
@@ -91,11 +98,9 @@ public class NewListFragment extends AbsListFragment {
                 super.onFailure(msg);
             }
         });
-
     }
     protected void processSuccess(List<WxSearch.ResultBean.ListBean> list) {
         if (getActivity() != null) {
-            setIsRequesting(false);
             if (adapter.getCount() > 0 && isRefreshing()) {
                 adapter.clear();
             }
@@ -110,14 +115,23 @@ public class NewListFragment extends AbsListFragment {
             if (hasMore) {
                 return;
             }
-
-            setAlreadyToLastPage(true);
             if (adapter.getCount() < getMinSizeToShowFooter()) {
                 adapter.setNoMore(null);
             } else {
                 adapter.setNoMore(R.layout.view_nomore);
             }
-            adapter.stopMore();
+        }
+    }
+
+    @Override
+    public void onItemViewClick(View view, int position) {
+        super.onItemViewClick(view, position);
+        WxSearch.ResultBean.ListBean listBean = (WxSearch.ResultBean.ListBean) adapter.getItem(position);
+        if (listBean != null){
+            Intent intent = new Intent(getActivity(),NewsdetailsActivity.class);
+            intent.putExtra("url",listBean.getSourceUrl());
+            startActivity(intent);
+//            ActivityUtil.toActivity(getActivity(),NewsdetailsActivity.class,"url",listBean.getSourceUrl());
         }
     }
 }

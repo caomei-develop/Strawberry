@@ -18,14 +18,15 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import com.cm.strawberry.R;
 import com.cm.strawberry.app.StrawberryApplication;
-import com.cm.strawberry.util.ActivityManager;
+import com.cm.strawberry.manger.ActivityManager;
 import com.cm.strawberry.util.ErrorViewUtil;
 import com.cm.strawberry.util.StatusBarUtil;
 import com.cm.strawberry.util.Utils;
 import com.cm.strawberry.view.CommonNoticeView;
-import com.cm.strawberry.view.InputMethodManagerUtil;
+import com.cm.strawberry.manger.InputMethodManagerUtil;
 import com.cm.strawberry.view.NewNavigationBar;
 
 /**
